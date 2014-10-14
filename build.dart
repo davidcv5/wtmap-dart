@@ -1,6 +1,6 @@
 import 'package:polymer/builder.dart';
         
 main(args) {
-  build(entryPoints: ['web/wt_map.html'],
+  build(entryPoints: ['web/index.html'],
         options: parseOptions(args));
 }
