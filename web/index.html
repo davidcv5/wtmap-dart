@@ -9,23 +9,17 @@
     <!-- include the web_components polyfills with support for Dart. -->
     <script src="packages/web_components/platform.js"></script>
     <script src="packages/web_components/dart_support.js"></script>
-
-    <!-- import the click-counter -->
-    <link rel="import" href="clickcounter.html">
+    
+    <!-- import wt-app -->
+    <link rel="import" href="packages/wt_map/wt_app/wt_app.html">
     
     <link rel="stylesheet" href="styles.css">
   </head>
-  <body>
-    <h1>Demo</h1>
-    
-    <p>Hello world from Dart!</p>
-    
-    <div id="sample_container_id">
-      <click-counter count="5"></click-counter>
-    </div>
-
+  <body unresolved>
+    <wt-app></wt-app>
     <!-- bootstrap polymer -->
-    <script type="application/dart">export 'package:polymer/init.dart';</script>
+    <script src="main.dart" type="application/dart"></script>
     <script src="packages/browser/dart.js"></script>
   </body>
 </html>
+
