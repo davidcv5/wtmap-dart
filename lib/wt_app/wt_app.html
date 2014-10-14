@@ -1,12 +1,23 @@
 
-<link rel="import" href="../../../packages/polymer/polymer.html">
+<link rel="import" href="../../../packages/core_elements/core_header_panel.html">
+<link rel="import" href="../../../packages/core_elements/core_icons.html">
+<link rel="import" href="../../../packages/core_elements/core_toolbar.html">
+<link rel="import" href="../../../packages/paper_elements/paper_icon_button.html">
 <link rel="import" href="../../../packages/paper_elements/roboto.html">
-<link rel="import" href="../sample/sample.html">
+
 
 <polymer-element name="wt-app">
   <template>
     <link href="wt_app.css" rel="stylesheet">
-    <sample-app></sample-app>
+    
+    <core-header-panel>
+      <core-toolbar>
+        <paper-icon-button icon="menu"></paper-icon-button>
+        <span flex>Waiting Map</span>
+      </core-toolbar>
+      <section content>
+      </section>
+    </core-header-panel>
   </template>
 
   <script type="application/dart" src="wt_app.dart"></script>
