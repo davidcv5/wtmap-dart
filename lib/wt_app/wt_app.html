@@ -2,21 +2,28 @@
 <link rel="import" href="../../../packages/core_elements/core_header_panel.html">
 <link rel="import" href="../../../packages/core_elements/core_icons.html">
 <link rel="import" href="../../../packages/core_elements/core_toolbar.html">
+<link rel="import" href="../../../packages/paper_elements/paper_button.html">
 <link rel="import" href="../../../packages/paper_elements/paper_icon_button.html">
 <link rel="import" href="../../../packages/paper_elements/roboto.html">
-
+<link rel="import" href="../../../packages/wt_map/wt_router/wt_router.html">
 
 <polymer-element name="wt-app">
   <template>
     <link href="wt_app.css" rel="stylesheet">
-    
-    <core-header-panel>
-      <core-toolbar>
-        <paper-icon-button icon="menu"></paper-icon-button>
+    <wt-router id="app_router" route={{route}}></wt-router>
+    <core-header-panel mode="standard" id="core_header_panel">
+      <core-toolbar id="core_toolbar">
+        <paper-icon-button icon="menu" id="core_icon_button"></paper-icon-button>
         <span flex>Waiting Map</span>
       </core-toolbar>
       <section content>
-        <div>my content</div>
+        <div>
+          Route:
+        </div>
+        <div><input type="text" value="{{test}}"/></div>
+        <div><input type="text" value="{{test}}"/></div>
+        <div><input type="text" value="{{route}}"/></div>
+        <a href="#/article/something">got to article</a>
       </section>
     </core-header-panel>
   </template>
